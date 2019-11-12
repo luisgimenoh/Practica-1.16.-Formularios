@@ -13,11 +13,77 @@
 
         <h1>Práctica 1.16 Formulario</h1>
         <br>
-        <form>
+        <form action="ejemplo.php" method="GET"><!-- Esto hace que el formulario funcione correctamente, sin esto se pueden marcar varias opciones. --> 
             <p>Tratamiento: *
                 <input type="radio" name="sr/sra" value="sr"> Sr.
                 <input type="radio" name="sr/sra" value="sra"> Sra.
             </p>
+
+            <p>Nombre: *
+                <input type="text" name="name" placeholder="Nombre">
+            </p>
+
+            <p>Apellido 1: *
+                <input type="text" name="name" placeholder="Apellido">
+            </p>
+
+            <p>Apellido 2: *
+                <input type="text" name="name" placeholder="Apellido">
+            </p>
+
+            <!-- Salto de línea -->
+            <br>
+
+            <p>Tipo Doc: *
+                <Select name="menu">
+                    <option value="1">D.N.I</option>
+                </Select>
+            </p>
+            
+
+            <p>Nº Doc: *
+                <input type="number" name="" placeholder="">
+            </p>
+
+            <p>Fecha de nacimiento: *
+                <input type="date" name="fecha">
+            </p>
+
+            <!-- Salto de línea -->
+            <br>
+
+            <p>País de nacimiento: *
+                <select name="menu">
+                    <option value="1">ESPAÑA</option>
+                </select>
+            </p>
+
+            <p>Nacionalidad: *
+                <select name="menu">
+                    <option value="1">ESPAÑA</option>
+                </select>
+            </p>
+
+            <p>Segunda Nacionalidad: *
+                <select name="menu">
+                    <option value="1">Ninguna</option>
+                    <option value="2">ESPAÑA</option>
+                </select>
+            </p>
+
+            <p>País de residencia fiscal: *
+                <select name="menu">
+                    <option value="1">ESPAÑA</option>
+                    <option value="2">SUECIA</option>
+                </select> 
+
+            </p>
+
+
+
+
+
+
         </form>
     </main>
     <footer></footer>
