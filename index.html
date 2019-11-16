@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Práctica 1.16</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header></header>
@@ -13,112 +15,126 @@
 
         <h1>Práctica 1.16 Formulario</h1>
         <br>
-        <form action="ejemplo.php" method="GET"><!-- Esto hace que el formulario funcione correctamente, sin esto se pueden marcar varias opciones. --> 
-            <p>Tratamiento: *
-                <input type="radio" name="sr/sra" value="sr"> Sr.
-                <input type="radio" name="sr/sra" value="sra"> Sra.
-            </p>
 
-            <p>Nombre: *
-                <input type="text" name="nombre" placeholder="Nombre">
-            </p>
+        
+        <form action="ejemplo.php" method="GET">
+            <table>
+                <tr>
+                    <td>Tratamiento: *</td>
+                    <td>Nombre: *</td>
+                    <td>Apellido 1: *</td>
+                    <td>Apellido 2: *</td>
+                </tr>
 
-            <p>Apellido 1: *
-                <input type="text" name="apellido" placeholder="Apellido">
-            </p>
+                <tr>
+                    <td>
+                        <input type="radio" name="sr/sra" value="sr">Sr
+                        <input type="radio" name="sr/sra" value="sra">Sra
+                    </td>
+                    <td><input type="text" name="nombre" placeholder="Nombre"></td>
+                    <td><input type="text" name="apellido" placeholder="Apellido"></td>
+                    <td><input type="text" name="apellido" placeholder="Apellido"></td>
+                </tr>
 
-            <p>Apellido 2: *
-                <input type="text" name="apellido" placeholder="Apellido">
-            </p>
 
-            <!-- Salto de línea -->
-            <br>
+                <tr>
+                    <td>Tipo Doc: *</td>
+                    <td>Nº Doc: *</td>
+                    <td>Fecha de nacimiento: *</td>
+                </tr>
 
-            <p>Tipo Doc: *
-                <Select name="menu">
-                    <option value="1">D.N.I</option>
-                </Select>
-            </p>
+                <tr>
+                    <td>
+                        <select name="menu">
+                            <option value="1">DNI</option>
+                            <option value="2">Pasaporte</option>
+                            <option value="3">Carné de conducir</option>
+                            <option value="4">Tarjeta Sanitaria</option>
+                        </select>
+                    </td>
+                    <td><input type="number" name="nº_doc"></td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td>País de nacimiento: *</td>
+                    <td>Nacionalidad: *</td>
+                    <td>Segunda nacionalidad:</td>
+                    <td>País de residencia fiscal</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select name="menu">
+                            <option value="1">ESPAÑA</option>
+                            <option value="2">PORTUGAL</option>
+                            <option value="3">FRANCIA</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="menu">
+                            <option value="1">ESPAÑA</option>
+                            <option value="2">PORTUGAL</option>
+                            <option value="3">FRANCIA</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="menu">
+                            <option value="1">Ninguna</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="menu">
+                            <option value="1">ESPAÑA</option>
+                            <option value="2">PORTUGAL</option>
+                            <option value="3">FRANCIA</option>
+                            <option value="4">SUECIA</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Trabajo*</td>
+                    <td>Tipo de Actividad*</td>
+                    <td>Sector Profesional*</td>
+                    <td>Empresa</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select name="menu">
+                            <option value="1">Desarrollador WEB</option>
+                            <option value="2">Desarrollador de Aplicaciones móbiles</option>
+                        </select>
+                    </td>
+                    <td><select name="menu"></select></td>
+                    <td><select name="menu"></select></td>
+                    <td><input type="text" name="empresa" placeholder="Empresa"></td>
+                </tr>
+
+                <tr>
+                    <td>Propósito de la cuenta: *</td>
+                    <td>Origen de sus ahorros</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select name="menu">
+                            <option value="1">Ahorro</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="menu">
+                            <option value="1">Nómina o pensión</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>   
+    
             
-
-            <p>Nº Doc: *
-                <input type="number" name="" placeholder="">
-            </p>
-
-            <p>Fecha de nacimiento: *
-                <input type="date" name="fecha">
-            </p>
-
-            <!-- Salto de línea -->
-            <br>
-
-            <p>País de nacimiento: *
-                <select name="menu">
-                    <option value="1">ESPAÑA</option>
-                </select>
-            </p>
-
-            <p>Nacionalidad: *
-                <select name="menu">
-                    <option value="1">ESPAÑA</option>
-                </select>
-            </p>
-
-            <p>Segunda Nacionalidad: *
-                <select name="menu">
-                    <option value="1">Ninguna</option>
-                    <option value="2">ESPAÑA</option>
-                </select>
-            </p>
-
-            <p>País de residencia fiscal: *
-                <select name="menu">
-                    <option value="1">ESPAÑA</option>
-                    <option value="2">SUECIA</option>
-                </select> 
-
-            </p>
-
-            <!-- Salto de línea -->
-            <br>
-
-            <p>Trabajo*
-                <select name="menu">
-                    <option value="1">Desarrollador WEB</option>
-                    <option value="2">Desarrollador Aplicaciones móbiles</option>
-                </select>
-            </p>
-            <p>Tipo de Actividad*
-                <select name="menu"></select>
-            </p>
-            <p>Sector Profesional*
-                <select name="menu"></select>
-            </p>
-            <p>Empresa
-                <input type="text" name="empresa" placeholder="Empresa">
-            </p>
-
-            <!-- Salto de línea  -->
-            <br>
-
-            <p>Propósito de la cuenta: *
-                <select name="menu">
-                    <option value="1">Ahorro</option>
-                </select>
-            </p>
-            <p>Origen de sus ahorros: *
-                <select name="menu">
-                    <option value="1">Nómina o pensión</option>
-                </select>
-            </p>
-
-            <!-- Salto de línea -->
-            <br>
-
-
-
-
-
+            <table id="gris">
+                <tr></tr>
+            </table>
         </form>
     </main>
     <footer></footer>
