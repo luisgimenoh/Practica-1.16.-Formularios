@@ -1,0 +1,13 @@
+div{
+    background-color: lightgrey;
+}
+
+td{
+    height:30px;
+    width: 250px;
+}
+
+table.tabla2{
+    text-align: center;
+}
+

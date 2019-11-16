@@ -18,6 +18,8 @@
 
         
         <form action="ejemplo.php" method="GET">
+            <h2>Formulario 1</h2>
+
             <table>
                 <tr>
                     <td>Tratamiento: *</td>
@@ -131,10 +133,104 @@
                 </tr>
             </table>   
     
-            
-            <table id="gris">
-                <tr></tr>
+            <br>
+            <br>
+
+
+
+            <div>
+            <table>
+                <tr>
+                    <td>Tipo de Vía*</td>
+                    <td>Dirección*</td>
+                    <td>Número*</td>
+                    <td>Piso</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select name="menu">
+                            <option value="1">CALLE</option>
+                        </select>
+                    </td>
+                    <td><input type="text"  name="direccion" placeholder="Dirección" size="40"></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>Urb./Pol./Otros</td>
+                    <td>Localidad*</td>
+                    <td>Provincia*</td>
+                    <td>Código Postal*</td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="urb/pol/otros"></td>
+                    <td><input type="text" name="localidad"></td>
+                    <td>
+                        <select name="menu"></select>
+                    </td>
+                    <td><input type="text" name="cp"></td>
+                </tr>
+
+                <tr>
+                    <td>Teléfono móvil:*</td>
+                    <td>Teléfono particular:</td>
+                    <td>Dirección de e-mail:*</td>
+                </tr>
+
+                <tr>
+                    <td><input type="tel"></td>
+                    <td><input type="tel"></td>
+                    <td><input type="email"></td>
+                </tr>
             </table>
+            </div>
+
+            <br>
+            <br>
+
+            <p>Para ofrecerle un mejor servicio nos sería útil conocer si posee en otra entidad: </p>
+            <input type="checkbox" value="plan_pensiones"> Plan de pensiones
+            <input type="checkbox" value="fondos"> Fondos
+            <input type="checkbox" value="acciones"> Acciones
+            <input type="checkbox" value="hipooteca"> Hipoteca
+            <input type="checkbox" value="prestamos"> Préstamos
+            <input type="checkbox" value="seguro_vida"> Seguro de Vida
+
+        
+            
+            <hr>
+
+            <br>
+
+            <h2>Formulario 2</h2>
+
+            <table class="tabla2">
+                <tr>
+                    <td>E-mail*</td>
+                    <td>DNI o Tarjeta de residencia*</td>
+                    <td>Fecha de nacimiento*</td>
+                </tr>
+                
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td>Campo obligatorio*</td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <iframe src="iframe.html" height="200" width="1000"></iframe>
+
+
         </form>
     </main>
     <footer></footer>
