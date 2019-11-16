@@ -25,16 +25,16 @@
                     <td>Tratamiento: *</td>
                     <td>Nombre: *</td>
                     <td>Apellido 1: *</td>
-                    <td>Apellido 2: *</td>
+                    <td>Apellido 2:</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <input type="radio" name="sr/sra" value="sr">Sr
-                        <input type="radio" name="sr/sra" value="sra">Sra
+                        <input type="radio" name="sr/sra" value="sr" required>Sr
+                        <input type="radio" name="sr/sra" value="sra" required>Sra
                     </td>
-                    <td><input type="text" name="nombre" placeholder="Nombre"></td>
-                    <td><input type="text" name="apellido" placeholder="Apellido"></td>
+                    <td><input type="text" name="nombre" placeholder="Nombre" required></td>
+                    <td><input type="text" name="apellido" placeholder="Apellido" required></td>
                     <td><input type="text" name="apellido" placeholder="Apellido"></td>
                 </tr>
 
@@ -47,34 +47,34 @@
 
                 <tr>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">DNI</option>
                             <option value="2">Pasaporte</option>
                             <option value="3">Carné de conducir</option>
                             <option value="4">Tarjeta Sanitaria</option>
                         </select>
                     </td>
-                    <td><input type="number" name="nº_doc"></td>
-                    <td><input type="date"></td>
+                    <td><input type="number" name="nº_doc" required></td>
+                    <td><input type="date" required></td>
                 </tr>
 
                 <tr>
                     <td>País de nacimiento: *</td>
                     <td>Nacionalidad: *</td>
                     <td>Segunda nacionalidad:</td>
-                    <td>País de residencia fiscal</td>
+                    <td>País de residencia fiscal*</td>
                 </tr>
 
                 <tr>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">ESPAÑA</option>
                             <option value="2">PORTUGAL</option>
                             <option value="3">FRANCIA</option>
                         </select>
                     </td>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">ESPAÑA</option>
                             <option value="2">PORTUGAL</option>
                             <option value="3">FRANCIA</option>
@@ -86,7 +86,7 @@
                         </select>
                     </td>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">ESPAÑA</option>
                             <option value="2">PORTUGAL</option>
                             <option value="3">FRANCIA</option>
@@ -104,13 +104,13 @@
 
                 <tr>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">Desarrollador WEB</option>
                             <option value="2">Desarrollador de Aplicaciones móbiles</option>
                         </select>
                     </td>
-                    <td><select name="menu"></select></td>
-                    <td><select name="menu"></select></td>
+                    <td><select name="menu" required></select></td>
+                    <td><select name="menu" required></select></td>
                     <td><input type="text" name="empresa" placeholder="Empresa"></td>
                 </tr>
 
@@ -121,7 +121,7 @@
 
                 <tr>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">Ahorro</option>
                         </select>
                     </td>
@@ -132,7 +132,7 @@
                     </td>
                 </tr>
             </table>   
-    
+
             <br>
             <br>
 
@@ -149,12 +149,12 @@
 
                 <tr>
                     <td>
-                        <select name="menu">
+                        <select name="menu" required>
                             <option value="1">CALLE</option>
                         </select>
                     </td>
-                    <td><input type="text"  name="direccion" placeholder="Dirección" size="40"></td>
-                    <td><input type="number"></td>
+                    <td><input type="text"  name="direccion" placeholder="Dirección" size="40" required></td>
+                    <td><input type="number" required></td>
                     <td><input type="number"></td>
                 </tr>
 
@@ -167,11 +167,11 @@
 
                 <tr>
                     <td><input type="text" name="urb/pol/otros"></td>
-                    <td><input type="text" name="localidad"></td>
+                    <td><input type="text" name="localidad" required></td>
                     <td>
-                        <select name="menu"></select>
+                        <select name="menu" required></select>
                     </td>
-                    <td><input type="text" name="cp"></td>
+                    <td><input type="text" name="cp" required></td>
                 </tr>
 
                 <tr>
@@ -181,9 +181,9 @@
                 </tr>
 
                 <tr>
+                    <td><input type="tel" required></td>
                     <td><input type="tel"></td>
-                    <td><input type="tel"></td>
-                    <td><input type="email"></td>
+                    <td><input type="email" required></td>
                 </tr>
             </table>
             </div>
@@ -199,8 +199,9 @@
             <input type="checkbox" value="prestamos"> Préstamos
             <input type="checkbox" value="seguro_vida"> Seguro de Vida
 
-        
             
+            
+            <br>
             <hr>
 
             <br>
@@ -215,9 +216,9 @@
                 </tr>
                 
                 <tr>
-                    <td><input type="text"></td>
-                    <td><input type="text"></td>
-                    <td><input type="date"></td>
+                    <td><input type="text" required></td>
+                    <td><input type="text" required></td>
+                    <td><input type="date" required></td>
                 </tr>
 
                 <tr>
@@ -230,7 +231,9 @@
 
             <iframe src="iframe.html" height="200" width="1000"></iframe>
 
-
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
         </form>
     </main>
     <footer></footer>
